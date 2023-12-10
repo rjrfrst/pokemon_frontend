@@ -1,8 +1,8 @@
 const Pokemons = ({pokemon}) => {
     return (
         <>
-            <h3>Here are the pokemons</h3>
-            <h4>{pokemon.id}</h4>
+            
+            <h4>{pokemon.name}</h4>
         </>
     );
 }

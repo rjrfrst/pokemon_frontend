@@ -1,10 +1,10 @@
 import Pokemons from "./Pokemons";
-const PokemonList = ({pokemons}) => {
+const PokemonList = ({pokemon}) => {
 
-    // Map an array
-    const pokemonComponents = pokemons.map((pokemon) => {
-        return <Pokemons key={pokemon.id} pokemon={pokemon} />
-    });
+    // Map an array, need to pass pokemon inside the () => {}
+    const pokemonComponents = pokemon.map((pokemon) =>{
+    return <Pokemons key={pokemon.id} pokemon={(pokemon)}/>
+    })
 
     return (
         <>
