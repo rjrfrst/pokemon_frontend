@@ -1,9 +1,10 @@
-const Pokemons = () => {
+const Pokemons = ({pokemon}) => {
     return (
         <>
-            <h3>This is where the pokemons should go</h3>
+            <h3>Here are the pokemons</h3>
+            <h4>{pokemon.id}</h4>
         </>
     );
 }
- 
+
 export default Pokemons;
